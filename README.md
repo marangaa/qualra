@@ -22,8 +22,7 @@ qualra/
 ├── scripts/
 │   ├── authenticate.py       # Provisioning script for API keys & workspace setup
 │   ├── run_research.py       # Creating & launching studies via MCP
-│   ├── get_insights.py       # Analysis, theme retrieval & recommendation fetching
-│   └── test_mcp_flow.py      # Local end-to-end verification script
+│   └── get_insights.py       # Analysis, theme retrieval & recommendation fetching
 └── resources/
     └── mcp-reference.md      # Full API catalog & tool specifications for reference
 ```
