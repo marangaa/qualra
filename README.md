@@ -40,8 +40,5 @@ This downloads `SKILL.md` triggers and helper scripts directly into your agent's
 ## Quick Start
 
 1. **Connect MCP**: Before running tools, make sure your agent is connected to the Qualra MCP server. Setup instructions are available at [getqualra.vercel.app/mcp](https://getqualra.vercel.app/mcp).
-2. **Authenticate**: If your workspace isn't linked yet, the agent will guide you to set up your credentials, or you can initialize it manually:
-   ```bash
-   python scripts/authenticate.py
-   ```
+2. **Authenticate**: If your workspace isn't linked yet, the AI agent will automatically detect it and guide you to provision your free credentials directly inside the chat interface (no manual script running needed!).
 3. **Launch Research**: Ask your agent: *"I need to run user research on onboarding friction."* The agent will automatically provision the workspace and share your live survey link!
