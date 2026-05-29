@@ -1,0 +1,13 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS metadata files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local credentials
+.qualra/
+credentials.json

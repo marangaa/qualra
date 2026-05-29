@@ -1,6 +1,8 @@
 # Qualra User Research Skill (`qualra-research-skill`)
 
-An AI agent skill that enables LLMs and agents to run AI-powered user research studies, analyze survey completion, and extract rich qualitative insights using the [Qualra](https://..vercel.app) MCP server.
+[![skills.sh](https://skills.sh/b/marangaa/qualra)](https://skills.sh/marangaa/qualra)
+
+An AI agent skill that enables LLMs and agents to run AI-powered user research studies, analyze survey completion, and extract qualitative insights using the [Qualra](https://getqualra.vercel.app) MCP server.
 
 This skill works across modern agent platforms (Claude Desktop, Cursor, Gemini, Copilot, Windsurf, etc.) and integrates seamlessly into developer workflows.
 
@@ -26,25 +28,21 @@ qualra/
     └── mcp-reference.md      # Full API catalog & tool specifications for reference
 ```
 
-## How to Install and Publish
+## Installation
 
-This repository is ready to be published to a public GitHub repo (e.g. `github.com/marangaa/qualra`). 
-
-### Running Locally (Testing)
-
-You can test the provisioning and survey creation scripts end-to-end. Ensure you have Python 3 installed:
-
-```bash
-# Run the end-to-end flow test (targets http://localhost:3000 or getqualra.vercel.app)
-python scripts/test_mcp_flow.py
-```
-
-### Distributing via skills.sh
-
-Once pushed to a public GitHub repository at `marangaa/qualra`, users can immediately install your skill onto their system using the `skills` CLI:
+Install the skill instantly into your AI agent environment using the Vercel `skills` CLI:
 
 ```bash
 npx skills add marangaa/qualra
 ```
 
-This single command downloads the `SKILL.md` triggers, the helper scripts, and links them directly to their local agent runtime environment.
+This downloads `SKILL.md` triggers and helper scripts directly into your agent's runtime environment.
+
+## Quick Start
+
+1. **Connect MCP**: Before running tools, make sure your agent is connected to the Qualra MCP server. Setup instructions are available at [getqualra.vercel.app/mcp](https://getqualra.vercel.app/mcp).
+2. **Authenticate**: If your workspace isn't linked yet, the agent will guide you to set up your credentials, or you can initialize it manually:
+   ```bash
+   python scripts/authenticate.py
+   ```
+3. **Launch Research**: Ask your agent: *"I need to run user research on onboarding friction."* The agent will automatically provision the workspace and share your live survey link!
